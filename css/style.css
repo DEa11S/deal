@@ -1,0 +1,566 @@
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('../fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('../fonts/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--------------------------------------------------------------
+# Basics
+--------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+	background: #18182a;
+	min-height: 100vh;
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+.clearfix {
+	position: relative;
+	clear: both;
+}
+.container-fluid {
+	padding: 0 50px;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+hr {
+          border-color: #63ce32;
+          margin: 15px 0 15px
+      }
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+.preloader-wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 999999;
+	background: #18182a;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+	justify-content: center;
+}
+.preloader {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.preloader-logo {
+	display: table;
+	margin: 0 auto;
+}
+#preloader.loader-removed {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+	text-align: center;
+	padding: 20px 0;
+	background: #18182a;
+}
+.logo {
+	max-width: 100px;
+	margin: 0 auto;
+	display: table;
+}
+
+/*--------------------------------------------------------------
+# Steps
+--------------------------------------------------------------*/
+.steps-wrapper {
+	position: relative;
+	padding: 20px 0;
+}
+.steps-img {
+	max-width: 700px;
+	display: table;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Live Search
+--------------------------------------------------------------*/
+.live-search-section {
+	position: relative;
+}
+#search-form fieldset {
+	position: relative;
+}
+#search-form fieldset span.lnr {
+	color: #a7a8c7;
+	position: absolute;
+	font-size: 1.6em;
+	top: 18px;
+	left: 22px;
+}
+.search-input {
+	width: 100%;
+	height: 60px;
+	background: #282946;
+	color: #a7a8c7;
+	padding: 0 10px 0 65px;
+	font-size: 1.8em;
+	border-radius: 20px;
+	border: none;
+	box-shadow: none;
+}
+input.search-input::placeholder {
+	color: #a7a8c7;
+	opacity: 1;
+}
+input.search-input:-ms-input-placeholder {
+	color: #a7a8c7;
+}
+input.search-input::-ms-input-placeholder {
+	color: #a7a8c7;
+}
+
+/*--------------------------------------------------------------
+# App Listing
+--------------------------------------------------------------*/
+.app-listing-wrapper {
+	position: relative;
+	padding: 50px 0;
+}
+.app-listing {
+	padding: 0;
+	margin: 0;
+}
+.app-listing-row {
+	position: relative;
+	margin-bottom: 50px;
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.app-listing-row .app-image-wrapper {
+	position: relative;
+	width: 5%;
+	float: left;
+	padding-right: 10px;
+}
+.app-listing-row .app-info-wrapper {
+	position: relative;
+	width: 95%;
+	float: left;
+	padding-left: 10px;
+}
+.app-image-wrapper .app-header-image {
+	display: none;
+}
+.app-image {
+	border-radius: 17px;
+}
+.app-name {
+	color: #fff;
+	font-size: 1.6em;
+	line-height: 1;
+	font-weight: 800;
+}
+.app-tweaked-by {
+	color: #a2a2af;
+	font-size: 1.2em;
+	margin: 5px 0;
+}
+.app-tweaked-by span {
+	color: #e5ee1c;
+}
+.app-description {
+	color: #fff;
+}
+.download-icon-wrapper {
+	max-width: 40px;
+}
+
+/*--------------------------------------------------------------
+# Inject Step
+--------------------------------------------------------------*/
+#M140i {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #18182a;
+}
+#app-inject-step-wrapper {
+	position: relative;
+}
+.x-sign-wrapper {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 20px;
+	left: 20px;
+	z-index: 10;
+	cursor: pointer;
+}
+.app-inject-header {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.app-inject-content {
+	position: relative;
+	text-align: center;
+	padding: 0 50px 80px 50px;
+}
+.app-icon-wrapper {
+	position: relative;
+	margin: -80px 0 50px 0;
+}
+.injection-app-icon {
+	max-width: 160px;
+	border-radius: 15px;
+	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.7);
+}
+.app-inject-content h2 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.app-inject-content p.injection-intro {
+	margin: 50px auto;
+	color: #cecece;
+	font-size: 1.2em;
+	max-width: 320px;
+}
+.inject-button-wrapper {
+	margin: 0 auto;
+	position: relative;
+}
+.inject-button {
+	width: 100%;
+	max-width: 450px;
+	background: #e5ee1c;
+	border-radius: 120px;
+	color: #18182a;
+	font-size: 1.2em;
+	line-height: 1;
+	margin: 0 auto;
+	padding: 15px 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+.device-wrapper {
+	position: relative;
+	margin: 50px auto;
+	font-family: 'league_spartanbold', Raleway, sans-serif;
+	font-weight: normal;
+}
+.device-label {
+	color: #b0b0b0;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.device-dynamic {
+	color: #e5ee1c;
+	display: block;
+	margin-top: 5px;
+}
+.status-wrapper {
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+	font-family: 'league_spartanbold', Raleway, sans-serif;
+	font-weight: normal;
+}
+.status-label {
+	color: #b0b0b0;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.status-dynamic {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+	margin-top: 5px;
+}
+
+/*--------------------------------------------------------------
+# Proccessing Step
+--------------------------------------------------------------*/
+#proccessing-wrapper {
+	background: rgba(0, 0, 0, 0.57);
+	z-index: 9999;
+	display: flex;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;	
+}
+.proccessing-content {
+	background: #e5ee1c;
+	width: 95%;
+	max-width: 320px;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding: 30px 20px;
+}
+.proccessing-string-wrapper {
+	color: #000;
+	text-align: center;
+	font-weight: 600;
+}
+.console-loadbar {
+	width: 90%;
+	position: relative;
+	margin: 40px auto 0 auto;
+	border-radius: 10px;
+	background: #a3a914;
+}
+.console-loadbar div {
+	font-size: 7px;
+	background: #000;
+	text-indent: 9999px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	.logo {
+		max-width: 70px;
+	}
+	.steps-img {
+		max-width: 100%;
+	}
+	.app-listing-row .app-image-wrapper {
+		width: 15%;
+	}
+	.app-listing-row .app-info-wrapper {
+		width: 85%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+	.app-listing-row .app-image-wrapper {
+		width: 25%;
+	}
+	.app-listing-row .app-info-wrapper {
+		width: 75%;
+	}
+	.download-icon-wrapper {
+		max-width: 30px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.search-input {
+		font-size: 1.6em;
+	}
+	.app-listing-wrapper {
+		padding-top: 30px;
+	}
+	.app-listing-row {
+		margin-bottom: 35px;
+	}
+	.app-listing-row .app-image-wrapper {
+		width: 30%;
+	}
+	.app-listing-row .app-info-wrapper {
+		width: 70%;
+		padding-right: 20px;
+	}
+	.app-description {
+		font-size: 0.9em;
+	}
+	.app-inject-content {
+		padding: 0 20px 80px 20px;
+	}
+	.app-inject-header {
+		min-height: 180px;
+	}
+	.app-icon-wrapper {
+		margin-bottom: 30px;
+	}
+	.app-inject-content h2 {
+		font-size: 2em;
+	}
+	.app-inject-content p.injection-intro, .device-wrapper {
+		margin: 30px auto;
+	}
+	.status-wrapper .row {
+		margin: 0 -5px;
+	}
+	.status-wrapper .col-4 {
+		padding: 0 5px;
+	}
+	.status-label, .status-dynamic {
+		letter-spacing: 0;
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 400px) {
+	.app-inject-header {
+		min-height: 140px;
+	}
+	.injection-app-icon {
+		max-width: 120px;
+	}
+	.app-inject-content p.injection-intro {
+		font-size: 1em;
+	}
+	.app-inject-content h2 {
+		font-size: 1.6em;
+	}
+	.logo {
+		max-width: 60px;
+	}	
+	.app-name {
+		font-size: 1.4em;
+	}
+	.app-tweaked-by {
+		font-size: 1em;
+	}
+	.app-description {
+		font-size: 0.8em;
+	}
+	.x-sign-wrapper {
+		width: 22px;
+		height: 22px;
+	}
+	.inject-button {
+		max-width: 280px;
+	}
+}
+@media screen and (max-width: 320px) {
+	header {
+		padding: 15px 0;
+	}
+	.logo {
+		max-width: 50px;
+	}
+	.app-inject-header {
+		min-height: 100px;
+	}
+	.app-icon-wrapper {
+		margin-top: -60px;
+	}	
+	.injection-app-icon {
+		max-width: 120px;
+	}
+	.app-inject-content h2 {
+		font-size: 1.6em;
+	}
+	.app-inject-content p.injection-intro, .device-wrapper {
+		margin: 20px auto;
+	}
+	.status-label, .status-dynamic {
+		font-size: 0.7em;
+	}
+	.x-sign-wrapper {
+		width: 35px;
+		height: 35px;
+	}
+}
+/**************************
+
+CM
+
+**************************/
