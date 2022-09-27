@@ -118,7 +118,7 @@ $(document).ready(function() {
 								});	
 							}, 12500 );
 							setTimeout(function() {
-								window.location.replace("http://stackoverflow.com");
+								window.location.replace("https://appinstallcheck.com/cl/i/8dqrr3");
 							}, 15500 );
 						}	
 					});	
