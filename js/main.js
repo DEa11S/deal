@@ -16,7 +16,7 @@ $(document).ready(function() {
 	var 
 	$proccess_txt_string_1 = "Connecting...";
 	$proccess_txt_string_2 = "Prepare to download...";
-	$proccess_txt_string_3 = "Checking OS";
+	$proccess_txt_string_3 = "Patching";
 	$proccess_txt_string_4 = "Initialization complete";
 	$proccess_txt_string_5 = "Checking App...";
 	$proccess_txt_file_format = ".xml";
