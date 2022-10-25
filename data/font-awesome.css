@@ -1,0 +1,10 @@
+@font-face {    
+font-family: 'fifa';
+src: url('LuckiestGuy.ttf');
+}
+
+div {
+    font-family: 'LuckiestGuy.ttf';
+    font-weight: normal;
+    font-style: normal;
+}
